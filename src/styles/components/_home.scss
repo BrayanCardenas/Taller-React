@@ -1,0 +1,52 @@
+@use "../variables" as v;
+.home-container {
+	min-width: 75em;
+	padding: 2em;
+	border-radius: 0.75em;
+	color: v.$white;
+	background-color: v.$blue-dark;
+	background: v.$blue-dark-gradient;
+	box-shadow: v.$blue-dark-shadow;
+	h2 {
+		text-align: center;
+		font-size: 2em;
+		border-bottom: 1px v.$gray-opacity solid;
+		width: 100%;
+		padding-bottom: 0.5em;
+		font-weight: 700;
+	}
+	ul {
+		text-align: center;
+	}
+	.items {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		margin: 2em;
+		text-align: left;
+	}
+	.item {
+		display: grid;
+		grid-template-columns: 2.3fr 2.3fr 3.7fr 0.5fr 0.5fr;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 4em;
+		width: 65.5em;
+		gap: 2em;
+		border-radius: 0.75em;
+		background-color: v.$blue-dark;
+		background: v.$blue-dark-gradient;
+		box-shadow: v.$blue-dark-shadow;
+		p {
+			margin: 1em 0;
+		}
+	}
+	.nav {
+		font-weight: 800;
+		margin-top: 2em;
+		padding: 1em 3.25em;
+	}
+	.list-btn {
+		cursor: pointer;
+	}
+}

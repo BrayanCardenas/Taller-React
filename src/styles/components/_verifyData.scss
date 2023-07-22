@@ -1,0 +1,35 @@
+@use "../variables" as v;
+.modal-container {
+	position: absolute;
+	display: flex;
+	padding: 3em;
+	// height: ;
+	font-size: 1.2em;
+	background: v.$blue-dark-gradient;
+	box-shadow: v.$blue-dark-shadow;
+	flex-direction: column;
+	gap: 1em;
+	border-radius: 0.75em;
+	color: v.$white;
+	h2 {
+		text-align: center;
+		width: 100%;
+		font-size: 1.7em;
+		font-weight: 700;
+		padding-bottom: 0.4em;
+		margin-bottom: 0.4em;
+
+		border-bottom: 1px solid v.$gray-opacity;
+	}
+	.modal-p {
+		width: 100%;
+		padding-bottom: 0.5em;
+		// border-bottom: 1px solid #ececec;
+	}
+	.modal-btn {
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+		width: 100%;
+	}
+}

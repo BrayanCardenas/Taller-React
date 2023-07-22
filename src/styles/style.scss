@@ -1,0 +1,15 @@
+@use "./reset";
+@use "./components";
+@use "./variables" as v;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: v.$blue-dark;
+}
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
